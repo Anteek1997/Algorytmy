@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{232A50E3-0969-4954-9C2A-16BFE9AE2C5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Algorytmy</RootNamespace>
+    <AssemblyName>Algorytmy</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Drzewo.cs" />
+    <Compile Include="Algorytm_Euklidesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algorytm_Euklidesa.Designer.cs">
+      <DependentUpon>Algorytm_Euklidesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fibonacci_Iteracyjnie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fibonacci_Iteracyjnie.Designer.cs">
+      <DependentUpon>Fibonacci_Iteracyjnie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fibonacci_Listy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fibonacci_Listy.Designer.cs">
+      <DependentUpon>Fibonacci_Listy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fibonacci_Rekuren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fibonacci_Rekuren.Designer.cs">
+      <DependentUpon>Fibonacci_Rekuren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Algorytmy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algorytmy.Designer.cs">
+      <DependentUpon>Algorytmy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SotrowanieBabelkowe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SotrowanieBabelkowe.Designer.cs">
+      <DependentUpon>SotrowanieBabelkowe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="drzew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drzew.Designer.cs">
+      <DependentUpon>drzew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MargeSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MargeSort.Designer.cs">
+      <DependentUpon>MargeSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kolejka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kolejka.Designer.cs">
+      <DependentUpon>kolejka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stos.Designer.cs">
+      <DependentUpon>stos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wezel.cs" />
+    <EmbeddedResource Include="Algorytm_Euklidesa.resx">
+      <DependentUpon>Algorytm_Euklidesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fibonacci_Iteracyjnie.resx">
+      <DependentUpon>Fibonacci_Iteracyjnie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fibonacci_Listy.resx">
+      <DependentUpon>Fibonacci_Listy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fibonacci_Rekuren.resx">
+      <DependentUpon>Fibonacci_Rekuren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algorytmy.resx">
+      <DependentUpon>Algorytmy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SotrowanieBabelkowe.resx">
+      <DependentUpon>SotrowanieBabelkowe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="drzew.resx">
+      <DependentUpon>drzew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MargeSort.resx">
+      <DependentUpon>MargeSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kolejka.resx">
+      <DependentUpon>kolejka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="stos.resx">
+      <DependentUpon>stos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
